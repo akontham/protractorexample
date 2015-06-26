@@ -42,3 +42,19 @@ Now start up a server with:
 <i>webdriver-manager start </i>
 
 This will start up a Selenium Server and will output a bunch of info logs. Your Protractor test will send requests to this server to control a local browser. Leave this server running throughout the tutorial. You can see information about the status of the server at <i>http://localhost:4444/wd/hub.</i>
+
+
+<b>Write a Test:</b>
+
+Protractor needs two files to run, a spec file and a configuration file
+Let's start with a simple test that navigates to an example AngularJS application and checks its title. We’ll use the Super Calculator application at http://juliemr.github.io/protractor-demo/.
+
+Create the file spec.js:
+
+The describe and it syntax is from the Jasmine framework
+
+browser is a global created by Protractor, which is used for browser-level commands such as navigation with browser.get.
+
+Now create the configuration file conf.js:
+
+
